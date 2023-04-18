@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/basic.css">
+    <title>{{ name }}</title>
+</head>
+<body>
+        <div class="menu-link">
+        <a href="/meal">Click here to spin the wheel!</a>
+    </div>
+    <div style="text-align: center;">
+        <img src="static/spinning.gif" alt="wheel">
+    </div>
+      <div>
+          <h1>{{ name }}</h1>
+          
+          <div class="content">
+            {% for content in aboutMe %}
+              <p>{{content}}<p>
+            {% endfor %}
+          </div>
+          
+      </div>
+</body>
+</html>
