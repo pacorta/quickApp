@@ -6,8 +6,14 @@
 </head>
 <body>
 	<h1>GIF Roulette</h1>
+    <button onclick="startGif()">Start GIF</button>
 	<img src="{{ url_for('static', filename='roulette.gif') }}" alt="roulette wheel">
 	<br>
 	<a href="/meal">Get a meal suggestion</a>
 </body>
+<script>
+    function startGif() {
+      document.getElementById('mygif').src = "{{ url_for('static', filename='mygif.gif') }}";
+    }
+  </script>
 </html>

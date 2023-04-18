@@ -12,6 +12,9 @@ def writeToFile(filename, message):
     with open(filename, 'a') as f:
         f.write(message)
 
+def index():
+    return render_template('index.html')
+
 @app.route('/')
 def homePage():
     name = "Welcome to the Healthy Roulette!"
