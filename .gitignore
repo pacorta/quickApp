@@ -1,5 +1,7 @@
 # Ignore static files
 /static/basic.css
+/static/catsushi.jpg
+/static/myPic.png
 /static/comments.txt
 /static/details.txt
 
